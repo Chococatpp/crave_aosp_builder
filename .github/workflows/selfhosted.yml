@@ -440,7 +440,7 @@ jobs:
         
         # Sync the repositories
         /opt/crave/resync.sh  && \
-        
+        pacman -S arm-none-eabi-gcc --noconfirm \
         # Set up build environment
         export BUILD_USERNAME=${{ github.actor }} ; \
         export BUILD_HOSTNAME=crave ; \
